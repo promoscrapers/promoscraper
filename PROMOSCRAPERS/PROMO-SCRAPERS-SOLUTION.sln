@@ -1,0 +1,102 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WEB", "WEB", "{769930F2-74F2-4A75-A941-ABFE880A269C}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{8b8e4704-bb57-43d4-adbe-527ae7650324}|Entity.dll;{968eeb21-5f79-4267-b636-1bf1c57ccdbc}|Utilities.dll;{78F635F2-1BB2-4DF4-9238-B5E8BFC03ED7}|BitlyDotNET.dll;{90de2858-964b-40e7-9165-8f179927a121}|BusinessLogic.dll;{E5865E9A-B11D-434D-9A12-90A52533274E}|DataAccess.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50250"
+		Debug.AspNetCompiler.PhysicalPath = "WEB\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50250\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50250"
+		Release.AspNetCompiler.PhysicalPath = "WEB\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50250\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50250"
+		SlnRelativePath = "WEB\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitlyDotNET", "BitlyDotNET\BitlyDotNET.csproj", "{78F635F2-1BB2-4DF4-9238-B5E8BFC03ED7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{968EEB21-5F79-4267-B636-1BF1C57CCDBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csproj", "{8B8E4704-BB57-43D4-ADBE-527AE7650324}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{E5865E9A-B11D-434D-9A12-90A52533274E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{90DE2858-964B-40E7-9165-8F179927A121}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{769930F2-74F2-4A75-A941-ABFE880A269C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{769930F2-74F2-4A75-A941-ABFE880A269C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{769930F2-74F2-4A75-A941-ABFE880A269C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{769930F2-74F2-4A75-A941-ABFE880A269C}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{78F635F2-1BB2-4DF4-9238-B5E8BFC03ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F635F2-1BB2-4DF4-9238-B5E8BFC03ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F635F2-1BB2-4DF4-9238-B5E8BFC03ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F635F2-1BB2-4DF4-9238-B5E8BFC03ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{968EEB21-5F79-4267-B636-1BF1C57CCDBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{968EEB21-5F79-4267-B636-1BF1C57CCDBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{968EEB21-5F79-4267-B636-1BF1C57CCDBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{968EEB21-5F79-4267-B636-1BF1C57CCDBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B8E4704-BB57-43D4-ADBE-527AE7650324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B8E4704-BB57-43D4-ADBE-527AE7650324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B8E4704-BB57-43D4-ADBE-527AE7650324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B8E4704-BB57-43D4-ADBE-527AE7650324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5865E9A-B11D-434D-9A12-90A52533274E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5865E9A-B11D-434D-9A12-90A52533274E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5865E9A-B11D-434D-9A12-90A52533274E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5865E9A-B11D-434D-9A12-90A52533274E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90DE2858-964B-40E7-9165-8F179927A121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90DE2858-964B-40E7-9165-8F179927A121}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90DE2858-964B-40E7-9165-8F179927A121}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90DE2858-964B-40E7-9165-8F179927A121}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://db.kotletas.com:8080/tfs/kotleta
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BitlyDotNET\\BitlyDotNET.csproj
+		SccProjectName1 = KOTLETAS-SOLUTION/BitlyDotNET
+		SccLocalPath1 = BitlyDotNET
+		SccProjectUniqueName2 = BusinessLogic\\BusinessLogic.csproj
+		SccProjectName2 = KOTLETAS-SOLUTION/BusinessLogic
+		SccLocalPath2 = BusinessLogic
+		SccProjectUniqueName3 = DataAccess\\DataAccess.csproj
+		SccProjectName3 = KOTLETAS-SOLUTION/DataAccess
+		SccLocalPath3 = DataAccess
+		SccProjectUniqueName4 = Entity\\Entity.csproj
+		SccProjectName4 = KOTLETAS-SOLUTION/Entity
+		SccLocalPath4 = Entity
+		SccProjectUniqueName5 = Utilities\\Utilities.csproj
+		SccProjectName5 = KOTLETAS-SOLUTION/Utilities
+		SccLocalPath5 = Utilities
+		SccWebProject6 = true
+		SccProjectUniqueName6 = WEB
+		SccProjectName6 = KOTLETAS-SOLUTION/WEB
+		SccLocalPath6 = WEB
+		SccProjectEnlistmentChoice6 = 2
+	EndGlobalSection
+EndGlobal

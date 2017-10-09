@@ -1,0 +1,13 @@
+C:\Users\mitnu\Desktop\MITCOUPONS\WEB-MIT-COUPONS\BusinessLogic\bin\Release\BusinessLogic.dll
+C:\Users\mitnu\Desktop\MITCOUPONS\WEB-MIT-COUPONS\BusinessLogic\bin\Release\BusinessLogic.pdb
+C:\Users\mitnu\Desktop\MITCOUPONS\WEB-MIT-COUPONS\BusinessLogic\bin\Release\DataAccess.dll
+C:\Users\mitnu\Desktop\MITCOUPONS\WEB-MIT-COUPONS\BusinessLogic\bin\Release\Entity.dll
+C:\Users\mitnu\Desktop\MITCOUPONS\WEB-MIT-COUPONS\BusinessLogic\bin\Release\Utilities.dll
+C:\Users\mitnu\Desktop\MITCOUPONS\WEB-MIT-COUPONS\BusinessLogic\bin\Release\BitlyDotNET.dll
+C:\Users\mitnu\Desktop\MITCOUPONS\WEB-MIT-COUPONS\BusinessLogic\bin\Release\DataAccess.pdb
+C:\Users\mitnu\Desktop\MITCOUPONS\WEB-MIT-COUPONS\BusinessLogic\bin\Release\Entity.pdb
+C:\Users\mitnu\Desktop\MITCOUPONS\WEB-MIT-COUPONS\BusinessLogic\bin\Release\Utilities.pdb
+C:\Users\mitnu\Desktop\MITCOUPONS\WEB-MIT-COUPONS\BusinessLogic\bin\Release\BitlyDotNET.pdb
+C:\Users\mitnu\Desktop\MITCOUPONS\WEB-MIT-COUPONS\BusinessLogic\obj\Release\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\mitnu\Desktop\MITCOUPONS\WEB-MIT-COUPONS\BusinessLogic\obj\Release\BusinessLogic.dll
+C:\Users\mitnu\Desktop\MITCOUPONS\WEB-MIT-COUPONS\BusinessLogic\obj\Release\BusinessLogic.pdb

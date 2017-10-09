@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/14/trunk/BitlyDotNET/Interfaces
+END
+IBitlyResponse.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/14/trunk/BitlyDotNET/Interfaces/IBitlyResponse.cs
+END
+IBitlyService.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/14/trunk/BitlyDotNET/Interfaces/IBitlyService.cs
+END
