@@ -104,3 +104,19 @@ C:\PROMOSCRAPERS\BusinessLogic\bin\Debug\BitlyDotNET.xml
 C:\PROMOSCRAPERS\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
 C:\PROMOSCRAPERS\BusinessLogic\obj\Debug\BusinessLogic.dll
 C:\PROMOSCRAPERS\BusinessLogic\obj\Debug\BusinessLogic.pdb
+D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\bin\Debug\BusinessLogic.dll
+D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\bin\Debug\BusinessLogic.pdb
+D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\bin\Debug\DataAccess.dll
+D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\bin\Debug\Entity.dll
+D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\bin\Debug\Utilities.dll
+D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\bin\Debug\MWSProducts_2011-10-01_v2017-03-22.dll
+D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\bin\Debug\BitlyDotNET.dll
+D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\bin\Debug\MWSClientCsRuntime-1.0.dll
+D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\bin\Debug\DataAccess.pdb
+D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\bin\Debug\Entity.pdb
+D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\bin\Debug\Utilities.pdb
+D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\bin\Debug\BitlyDotNET.pdb
+D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\bin\Debug\BitlyDotNET.xml
+D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\obj\Debug\BusinessLogic.dll
+D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\obj\Debug\BusinessLogic.pdb

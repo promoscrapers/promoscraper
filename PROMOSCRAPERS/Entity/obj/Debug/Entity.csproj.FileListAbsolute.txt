@@ -33,3 +33,8 @@ C:\PROMO-SCRAPERS\Entity\bin\Debug\Entity.pdb
 C:\PROMO-SCRAPERS\Entity\obj\Debug\Entity.dll
 C:\PROMO-SCRAPERS\Entity\obj\Debug\Entity.pdb
 C:\PROMO-SCRAPERS\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+D:\Georgi Workspace\PROMOSCRAPERS\Entity\bin\Debug\Entity.dll
+D:\Georgi Workspace\PROMOSCRAPERS\Entity\bin\Debug\Entity.pdb
+D:\Georgi Workspace\PROMOSCRAPERS\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+D:\Georgi Workspace\PROMOSCRAPERS\Entity\obj\Debug\Entity.dll
+D:\Georgi Workspace\PROMOSCRAPERS\Entity\obj\Debug\Entity.pdb

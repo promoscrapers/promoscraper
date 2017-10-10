@@ -1,51 +1,15 @@
-﻿using System;
+﻿using MarketplaceWebServiceProducts;
+using MarketplaceWebServiceProducts.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using DataAccess;
-using Entity;
-using MarketplaceWebServiceProducts;
-using MarketplaceWebServiceProducts.Model;
-using System.Xml.Serialization;
-using System.IO;
-using System.Xml;
 
-namespace BusinessLogic
+namespace Utilities
 {
-    public class UserBLL
+    public class AmazonGetProducts
     {
-
-        //public static CouponEnt InsertBuyer(Buyer br)
-        //{
-        //    return new UserDAL().InsertBuyer(br);            
-        //}
-
-
-        //public static Buyer GetBuyer(int iBuyerID)
-        //{
-        //    return new UserDAL().GetBuyer(iBuyerID);
-        //}
-
-
-        //public static bool AuthenticateEmail(int iBuyerID, Guid gEmailID)
-        //{           
-
-        //    try
-        //    {
-        //        return new UserDAL().ConfirmEmail(iBuyerID, gEmailID);
-
-        //    }
-        //    catch(Exception ex)
-        //    {
-        //        return false;
-        //    }
-
-
-        //}
-
-
-
-        public void CallToAmazon()
+        public string CallToAmazon()
         {
             // TODO: Set the below configuration variables before attempting to run
 
@@ -86,8 +50,8 @@ namespace BusinessLogic
                 // response = sample.InvokeGetLowestOfferListingsForSKU();
                 // response = sample.InvokeGetLowestPricedOffersForASIN();
                 // response = sample.InvokeGetLowestPricedOffersForSKU();
-                //response = InvokeGetMatchingProduct(client);
-                response = InvokeListMatchingProducts(client);
+                 //response = InvokeGetMatchingProduct(client);
+                 response = InvokeListMatchingProducts(client);
                 // response = sample.InvokeGetMatchingProductForId();
                 // response = sample.InvokeGetMyFeesEstimate();
                 // response = sample.InvokeGetMyPriceForASIN();
@@ -102,8 +66,7 @@ namespace BusinessLogic
                 //Console.WriteLine("RequestId: " + rhmd.RequestId);
                 //Console.WriteLine("Timestamp: " + rhmd.Timestamp);
                 string responseXml = response.ToXML();
-                //Product obj = new Product();
-                XMLSerialization(responseXml);
+                return responseXml;
                 //Console.WriteLine(responseXml);
             }
             catch (MarketplaceWebServiceProductsException ex)
@@ -123,6 +86,26 @@ namespace BusinessLogic
                 throw ex;
             }
         }
+        //private readonly MarketplaceWebServiceProducts.MarketplaceWebServiceProducts client;
+
+        //public AmazonGetProducts(MarketplaceWebServiceProducts.MarketplaceWebServiceProducts client)
+        //{
+        //    this.client = client;
+        //}
+        public GetMatchingProductResponse InvokeGetMatchingProduct(MarketplaceWebServiceProducts.MarketplaceWebServiceProducts client)
+        {
+            // Create a request.
+            GetMatchingProductRequest request = new GetMatchingProductRequest();
+            string sellerId = "A3H9ZT52H99B8J";
+            request.SellerId = sellerId;
+            string mwsAuthToken = "amzn.mws.06af8380-c09c-5d3b-8943-994cf89b99b5";
+            request.MWSAuthToken = mwsAuthToken;
+            string marketplaceId = "ATVPDKIKX0DER";
+            request.MarketplaceId = marketplaceId;
+            ASINListType asinList = new ASINListType();
+            request.ASINList = asinList;
+            return client.GetMatchingProduct(request);
+        }
 
         public ListMatchingProductsResponse InvokeListMatchingProducts(MarketplaceWebServiceProducts.MarketplaceWebServiceProducts client)
         {
@@ -140,51 +123,5 @@ namespace BusinessLogic
             request.QueryContextId = queryContextId;
             return client.ListMatchingProducts(request);
         }
-
-        public void XMLSerialization(string XML)
-        {
-            try
-            {
-                //string xmlFile = File.ReadAllText(@"D:\Work_Time_Calculator\10-07-2013.xml");
-                XmlDocument xmldoc = new XmlDocument();
-                xmldoc.LoadXml(XML);
-                XmlNodeList nodeList = xmldoc.GetElementsByTagName("Product");
-                string Short_Fall = string.Empty;
-                foreach (XmlNode node in nodeList)
-                {
-                    Short_Fall = node.InnerXml;
-                    xmldoc.LoadXml(Short_Fall);
-
-                    XmlNodeList ASIN = xmldoc.GetElementsByTagName("ASIN");
-                    XmlNodeList ProductCategoryId = xmldoc.GetElementsByTagName("ProductCategoryId");
-                    XmlNodeList ProductGroup = xmldoc.GetElementsByTagName("ns2:ProductGroup");
-                    XmlNodeList ProductTypeName = xmldoc.GetElementsByTagName("ns2:ProductTypeName");
-                    XmlNodeList PublicationDate = xmldoc.GetElementsByTagName("ns2:PublicationDate");
-                    XmlNodeList ReleaseDate = xmldoc.GetElementsByTagName("ns2:ReleaseDate");
-
-                }
-            }
-            catch (Exception exp)
-            {
-                throw exp;
-                //Handle Exception Code
-            }
-         
-        }
-    }
-    public class Product
-    {
-        public string ASIN { get; set; }
-        public long ProductCategoryId { get; set; }
-        public string ProductCategory { get; set; }
-        public string ProductGroup { get; set; }
-        public string ProductTypeName { get; set; }
-        public string PublicationDate { get; set; }
-        public string ReleaseDate { get; set; }
-        public string URL { get; set; }
-        public string MarketplaceId { get; set; }
-        public string Amount { get; set; }
-        public string CurrencyCode { get; set; }
-
     }
 }

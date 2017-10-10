@@ -98,3 +98,19 @@ C:\PROMOSCRAPERS\Utilities\obj\Debug\Interop.AccessibilityCplAdminLib.dll
 C:\PROMOSCRAPERS\Utilities\obj\Debug\Utilities.csproj.ResolveComReference.cache
 C:\PROMOSCRAPERS\Utilities\obj\Debug\Utilities.dll
 C:\PROMOSCRAPERS\Utilities\obj\Debug\Utilities.pdb
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\bin\Debug\Utilities.dll
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\bin\Debug\Utilities.pdb
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\bin\Debug\BitlyDotNET.dll
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\bin\Debug\Entity.dll
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\bin\Debug\MWSClientCsRuntime-1.0.dll
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\bin\Debug\MWSProducts_2011-10-01_v2017-03-22.dll
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\bin\Debug\Recaptcha.dll
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\bin\Debug\BitlyDotNET.pdb
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\bin\Debug\BitlyDotNET.xml
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\bin\Debug\Entity.pdb
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\bin\Debug\Interop.AccessibilityCplAdminLib.dll
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\obj\Debug\Utilities.csprojResolveAssemblyReference.cache
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\obj\Debug\Interop.AccessibilityCplAdminLib.dll
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\obj\Debug\Utilities.csproj.ResolveComReference.cache
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\obj\Debug\Utilities.dll
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\obj\Debug\Utilities.pdb

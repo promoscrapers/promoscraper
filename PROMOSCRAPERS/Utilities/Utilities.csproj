@@ -64,6 +64,12 @@
     <Reference Include="ModernHttpClient">
       <HintPath>.\ModernHttpClient.dll</HintPath>
     </Reference>
+    <Reference Include="MWSClientCsRuntime-1.0">
+      <HintPath>..\..\..\Developement\Amazon\dist\MWSClientCsRuntime-1.0.dll</HintPath>
+    </Reference>
+    <Reference Include="MWSProducts_2011-10-01_v2017-03-22">
+      <HintPath>..\..\..\Developement\Amazon\dist\MWSProducts_2011-10-01_v2017-03-22.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>.\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -94,6 +100,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AmazonGetProducts.cs" />
     <Compile Include="CommonLibrary.cs" />
     <Compile Include="ConfigValues.cs" />
     <Compile Include="Cryptography\AESEncryption.cs" />

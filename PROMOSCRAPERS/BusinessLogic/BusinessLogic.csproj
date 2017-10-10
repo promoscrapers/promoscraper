@@ -55,6 +55,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MWSClientCsRuntime-1.0, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Developement\Amazon\dist\MWSClientCsRuntime-1.0.dll</HintPath>
+    </Reference>
+    <Reference Include="MWSProducts_2011-10-01_v2017-03-22, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Developement\Amazon\dist\MWSProducts_2011-10-01_v2017-03-22.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
