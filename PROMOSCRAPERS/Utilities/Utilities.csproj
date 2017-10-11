@@ -100,7 +100,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AmazonGetProducts.cs" />
     <Compile Include="CommonLibrary.cs" />
     <Compile Include="ConfigValues.cs" />
     <Compile Include="Cryptography\AESEncryption.cs" />

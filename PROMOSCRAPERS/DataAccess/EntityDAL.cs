@@ -231,6 +231,28 @@ namespace DataAccess
         }
 
 
+
+        public static List<string> GetASINWithNoCategoryName
+        {
+            get
+            {
+                List<string> lst = new List<string>();
+                
+
+                using (SqlDataReader dr = SqlHelper.ExecuteReader(DbConnection.GetConnectionString(), System.Data.CommandType.StoredProcedure, "GetASIN_withNoCategoryName"))
+                {
+                    while (dr.Read())
+                    {
+
+                        lst.Add(dr["AmazonASIN"].ToString());
+                    }
+
+                    dr.Close();
+                }
+
+                return lst;
+            }
+        }
     }
 
 

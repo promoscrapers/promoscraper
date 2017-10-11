@@ -74,15 +74,17 @@ namespace BusinessLogic
                 }
                 else
                 {
-                    List<KotletaProduct> lstproducts = EntityDAL.ProductList;
+                    List<string> lstASINs = EntityDAL.GetASINWithNoCategoryName;
 
-                    foreach (var Product in lstproducts)
+                    foreach (var asin in lstASINs)
                     {
-                        if(Product.AmazonASIN!= null)
-                        { 
-                        response = InvokeGetProductCategoriesForASIN(client, Product.AmazonASIN);
+
+                        if(asin != null)
+                        {
+                        response = InvokeGetProductCategoriesForASIN(client, asin);
                         string responseXml = response.ToXML();
                         XMLSerializationforCategories(responseXml);
+                        System.Threading.Thread.Sleep(2000);
                         }
                     }
 

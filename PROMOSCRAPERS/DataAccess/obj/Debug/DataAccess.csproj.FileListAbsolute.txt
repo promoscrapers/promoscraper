@@ -92,9 +92,7 @@ D:\Georgi Workspace\PROMOSCRAPERS\DataAccess\bin\Debug\DataAccess.dll
 D:\Georgi Workspace\PROMOSCRAPERS\DataAccess\bin\Debug\DataAccess.pdb
 D:\Georgi Workspace\PROMOSCRAPERS\DataAccess\bin\Debug\Entity.dll
 D:\Georgi Workspace\PROMOSCRAPERS\DataAccess\bin\Debug\Utilities.dll
-D:\Georgi Workspace\PROMOSCRAPERS\DataAccess\bin\Debug\MWSProducts_2011-10-01_v2017-03-22.dll
 D:\Georgi Workspace\PROMOSCRAPERS\DataAccess\bin\Debug\BitlyDotNET.dll
-D:\Georgi Workspace\PROMOSCRAPERS\DataAccess\bin\Debug\MWSClientCsRuntime-1.0.dll
 D:\Georgi Workspace\PROMOSCRAPERS\DataAccess\bin\Debug\Entity.pdb
 D:\Georgi Workspace\PROMOSCRAPERS\DataAccess\bin\Debug\Utilities.pdb
 D:\Georgi Workspace\PROMOSCRAPERS\DataAccess\bin\Debug\BitlyDotNET.pdb
