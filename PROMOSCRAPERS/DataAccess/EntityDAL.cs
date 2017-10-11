@@ -139,6 +139,10 @@ namespace DataAccess
                 parm.Value = prd.Price;
                 list.Add(parm);
 
+                parm = new SqlParameter("CategoryId", System.Data.SqlDbType.BigInt);
+                parm.Value = prd.Category;
+                list.Add(parm);
+
                 SqlParameter parm_ReturnMessage = new SqlParameter("oReturnMessage", System.Data.SqlDbType.VarChar, 50);
                 parm_ReturnMessage.Direction = System.Data.ParameterDirection.Output;
                 list.Add(parm_ReturnMessage);
@@ -158,7 +162,44 @@ namespace DataAccess
 
         }
 
+        public static bool InsertProductCategories(string CategoryId,string CategoryName,string ParentId)
+        {
+            try
+            {
+                List<SqlParameter> list = new List<SqlParameter>();
+                SqlParameter parm = null;
 
+                parm = new SqlParameter("CategoryId", System.Data.SqlDbType.BigInt);
+                parm.Value = CategoryId;
+                list.Add(parm);
+
+                parm = new SqlParameter("CategoryName", System.Data.SqlDbType.VarChar);
+                parm.Value = CategoryName;
+                list.Add(parm);
+
+
+                parm = new SqlParameter("ParentId", System.Data.SqlDbType.BigInt);
+                parm.Value = ParentId;
+                list.Add(parm);
+
+                SqlParameter parm_ReturnMessage = new SqlParameter("oReturnMessage", System.Data.SqlDbType.VarChar, 50);
+                parm_ReturnMessage.Direction = System.Data.ParameterDirection.Output;
+                list.Add(parm_ReturnMessage);
+
+                SqlHelper.ExecuteScalar(DbConnection.GetConnectionString(), System.Data.CommandType.StoredProcedure, "insert_new_Category", list.ToArray());
+                string sReturnMsg = parm_ReturnMessage.Value.ToString();
+
+                if (sReturnMsg == "OK")
+                    return true;
+                else
+                    return false;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+        }
 
         public static List<KotletaProduct> ProductList
         {
@@ -177,6 +218,7 @@ namespace DataAccess
                         SD.ImageURL = dr["ImageURL"].ToString();
                         SD.isActive = bool.Parse(dr["isActive"].ToString());
                         SD.DateTimeWhen = DateTime.Parse(dr["DateTimeAdded"].ToString());
+                        SD.AmazonASIN = dr["AmazonASIN"].ToString();
                         lst.Add(SD);
                         SD = new KotletaProduct();
                     }

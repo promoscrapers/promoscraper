@@ -182,4 +182,68 @@
       </Product>
     </Products>
   </ListMatchingProductsResult>
+  
+  
+  
+  
+  
+  
+  
+<?xml version="1.0"?>
+<GetProductCategoriesForASINResponse
+  xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
+<GetProductCategoriesForASINResult>
+  <Self>
+    <ProductCategoryId>2420095011</ProductCategoryId>
+    <ProductCategoryName>Compression Shorts</ProductCategoryName>
+    <Parent>
+      <ProductCategoryId>2419332011</ProductCategoryId>
+      <ProductCategoryName>Men</ProductCategoryName>
+      <Parent>
+        <ProductCategoryId>2371051011</ProductCategoryId>
+        <ProductCategoryName>Clothing</ProductCategoryName>
+        <Parent>
+          <ProductCategoryId>3403201</ProductCategoryId>
+            <ProductCategoryName>Bikes &#x26; Accessories</ProductCategoryName>
+          <Parent>
+            <ProductCategoryId>2232464011</ProductCategoryId>
+              <ProductCategoryName>Bikes &#x26; Scooters</ProductCategoryName>
+            <Parent>
+              <ProductCategoryId>3375301</ProductCategoryId>
+              <ProductCategoryName>Categories</ProductCategoryName>
+              <Parent>
+                <ProductCategoryId>3375251</ProductCategoryId>
+                <ProductCategoryName>Categories</ProductCategoryName>
+              </Parent>
+            </Parent>
+          </Parent>
+        </Parent>
+      </Parent>
+    </Parent>
+  </Self>
+</GetProductCategoriesForASINResult>
+<ResponseMetadata>
+  <RequestId>fbce5b62-67cc-4ab8-86f3-EXAMPLE22e4e</RequestId>
+</ResponseMetadata>
+</GetProductCategoriesForASINResponse>
+  
+  
+  
+  
+  <GetProductCategoriesForASINResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
+ <GetProductCategoriesForASINResult>
+   <Self>
+   <ProductCategoryId>13271113011</ProductCategoryId><ProductCategoryName>After Shaves</ProductCategoryName>
+   <Parent>
+   <ProductCategoryId>13271079011</ProductCategoryId><ProductCategoryName>Men&amp;#039;s</ProductCategoryName>
+   <Parent>
+   <ProductCategoryId>3778591</ProductCategoryId><ProductCategoryName>Shave &amp;amp; Hair Removal</ProductCategoryName>
+   <Parent>
+   <ProductCategoryId>11055981</ProductCategoryId><ProductCategoryName>Products</ProductCategoryName>
+   <Parent>
+   <ProductCategoryId>3760911</ProductCategoryId><ProductCategoryName>Beauty &amp;amp; Personal Care</ProductCategoryName></Parent>
+   </Parent>
+   </Parent>
+   </Parent>
+  </Self></GetProductCategoriesForASINResult><ResponseMetadata><RequestId>835c3341-cd39-40ed-9746-a6f2917691b6</RequestId></ResponseMetadata></GetProductCategoriesForASINResponse>
      

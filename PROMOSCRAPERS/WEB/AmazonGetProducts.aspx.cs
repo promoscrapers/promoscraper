@@ -22,7 +22,9 @@ public partial class AmazonGetProducts : System.Web.UI.Page
         //string xml =objamzongetproducts.CallToAmazon();
 
         UserBLL dd = new UserBLL();
-        dd.CallToAmazon();
+        dd.CallToAmazon("GetProducts");
+
+
 
         //XmlSerializer serializer = new XmlSerializer(typeof(List<MyClass>));
 
@@ -36,5 +38,11 @@ public partial class AmazonGetProducts : System.Web.UI.Page
         //{
         //    List<MyClass> dezerializedList = (List<MyClass>)serializer.Deserialize(stream);
         //}
+    }
+
+    protected void btngetCategories_Click(object sender, EventArgs e)
+    {
+        UserBLL dd = new UserBLL();
+        dd.CallToAmazon("GetCategories");
     }
 }

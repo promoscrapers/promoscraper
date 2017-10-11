@@ -13,6 +13,10 @@ namespace Entity
         string _ImageURL; public string ImageURL { get { return _ImageURL; } set { _ImageURL = value; } }
         decimal _Price; public decimal Price { get { return _Price; } set { _Price = value; } }
         DateTime _DateTimeWhen; public DateTime DateTimeWhen { get { return _DateTimeWhen; } set { _DateTimeWhen = value; } }
+        string _Category; public string Category { get { return _Category; } set { _Category = value; } }
+        string _ProductGroup; public string ProductGroup { get { return _ProductGroup; } set { _ProductGroup = value; } }
         bool _isActive; public bool isActive { get { return _isActive; } set { _isActive = value; } }
+        string _CurrencyCode; public string CurrencyCode { get { return _CurrencyCode; } set { _CurrencyCode = value; } }
+
     }
 }
