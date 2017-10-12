@@ -104,3 +104,17 @@ C:\PROMOSCRAPERS\BusinessLogic\bin\Debug\BitlyDotNET.xml
 C:\PROMOSCRAPERS\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
 C:\PROMOSCRAPERS\BusinessLogic\obj\Debug\BusinessLogic.dll
 C:\PROMOSCRAPERS\BusinessLogic\obj\Debug\BusinessLogic.pdb
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\BusinessLogic\bin\Debug\DataAccess.dll
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\BusinessLogic\bin\Debug\Entity.dll
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\BusinessLogic\bin\Debug\Utilities.dll
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\BusinessLogic\bin\Debug\BitlyDotNET.dll
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\BusinessLogic\bin\Debug\DataAccess.pdb
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\BusinessLogic\bin\Debug\Entity.pdb
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\BusinessLogic\bin\Debug\Utilities.pdb
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\BusinessLogic\bin\Debug\BitlyDotNET.pdb
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\BusinessLogic\bin\Debug\BitlyDotNET.xml
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\BusinessLogic\obj\Debug\BusinessLogic.pdb

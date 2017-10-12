@@ -15,6 +15,7 @@
     </table>
 
         <asp:Table ID="tbloutput" runat="server" />
+        <asp:Label ID="lbloutput" runat="server" Text="" />
     </div>
     </form>
 </body>

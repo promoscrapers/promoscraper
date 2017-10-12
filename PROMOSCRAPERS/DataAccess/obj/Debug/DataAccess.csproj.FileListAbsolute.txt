@@ -88,3 +88,15 @@ C:\PROMOSCRAPERS\DataAccess\bin\Debug\BitlyDotNET.xml
 C:\PROMOSCRAPERS\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
 C:\PROMOSCRAPERS\DataAccess\obj\Debug\DataAccess.dll
 C:\PROMOSCRAPERS\DataAccess\obj\Debug\DataAccess.pdb
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\DataAccess\bin\Debug\DataAccess.dll
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\DataAccess\bin\Debug\DataAccess.pdb
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\DataAccess\bin\Debug\Entity.dll
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\DataAccess\bin\Debug\Utilities.dll
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\DataAccess\bin\Debug\BitlyDotNET.dll
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\DataAccess\bin\Debug\Entity.pdb
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\DataAccess\bin\Debug\Utilities.pdb
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\DataAccess\bin\Debug\BitlyDotNET.pdb
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\DataAccess\bin\Debug\BitlyDotNET.xml
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\DataAccess\obj\Debug\DataAccess.dll
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\DataAccess\obj\Debug\DataAccess.pdb

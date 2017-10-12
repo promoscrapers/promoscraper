@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Collections;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -24,44 +24,63 @@ public partial class QUICK : System.Web.UI.Page
         TableRow tr = new TableRow();
         TableCell td = new TableCell();
 
+        Hashtable hs = new Hashtable();
+
+        string splitHostName = "";
+        
+
         for (int i = 0; i < lst.Length; i++)
         {
-            lst2 = lst[i].Split(new Char[] { '$' }, StringSplitOptions.RemoveEmptyEntries);
 
-            td.Text = lst2[0].Trim();
-
-            tr.Cells.Add(td);
-            td = new TableCell();
-
-            td.Text = "$"+ (decimal.Parse(lst2[1].Trim()) + 4).ToString();
-
-            tr.Cells.Add(td);
-            td = new TableCell();
-
-            td.Text = "$" + (decimal.Parse(lst2[2].Trim()) + 4).ToString();
-
-            tr.Cells.Add(td);
-            td = new TableCell();
+            if (lst[i].Length > 4)
+            {
+                splitHostName = lst[i].ToLower().Trim().Replace("http://","").Replace("https://","").Replace("www.","").Trim().Split('/')[0];
 
 
-            td.Text = "$" + (decimal.Parse(lst2[3].Trim()) + 4).ToString();
 
-            tr.Cells.Add(td);
-            td = new TableCell();
+                if (!hs.ContainsKey(splitHostName))
+                {
+                    lbloutput.Text += "Domain:"+splitHostName + "<br>";
+                    hs.Add(splitHostName, splitHostName);
+                }
+            }
+
+            //lst2 = lst[i].Split(new Char[] { '$' }, StringSplitOptions.RemoveEmptyEntries);
+
+            //td.Text = lst2[0].Trim();
+
+            //tr.Cells.Add(td);
+            //td = new TableCell();
+
+            //td.Text = "$"+ (decimal.Parse(lst2[1].Trim()) + 4).ToString();
+
+            //tr.Cells.Add(td);
+            //td = new TableCell();
+
+            //td.Text = "$" + (decimal.Parse(lst2[2].Trim()) + 4).ToString();
+
+            //tr.Cells.Add(td);
+            //td = new TableCell();
 
 
-            td.Text = "$" + (decimal.Parse(lst2[4].Trim()) + 4).ToString();
+            //td.Text = "$" + (decimal.Parse(lst2[3].Trim()) + 4).ToString();
 
-            tr.Cells.Add(td);
-            td = new TableCell();
+            //tr.Cells.Add(td);
+            //td = new TableCell();
 
 
-            td.Text = "$" + (decimal.Parse(lst2[5].Trim()) + 4).ToString();
+            //td.Text = "$" + (decimal.Parse(lst2[4].Trim()) + 4).ToString();
 
-            tr.Cells.Add(td);
-            td = new TableCell();
-            tbloutput.Rows.Add(tr);
-            tr = new TableRow();
+            //tr.Cells.Add(td);
+            //td = new TableCell();
+
+
+            //td.Text = "$" + (decimal.Parse(lst2[5].Trim()) + 4).ToString();
+
+            //tr.Cells.Add(td);
+            //td = new TableCell();
+            //tbloutput.Rows.Add(tr);
+            //tr = new TableRow();
 
         }
     }

@@ -98,3 +98,17 @@ C:\PROMOSCRAPERS\Utilities\obj\Debug\Interop.AccessibilityCplAdminLib.dll
 C:\PROMOSCRAPERS\Utilities\obj\Debug\Utilities.csproj.ResolveComReference.cache
 C:\PROMOSCRAPERS\Utilities\obj\Debug\Utilities.dll
 C:\PROMOSCRAPERS\Utilities\obj\Debug\Utilities.pdb
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\Utilities\bin\Debug\Utilities.dll
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\Utilities\bin\Debug\Utilities.pdb
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\Utilities\bin\Debug\BitlyDotNET.dll
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\Utilities\bin\Debug\Entity.dll
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\Utilities\bin\Debug\Recaptcha.dll
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\Utilities\bin\Debug\BitlyDotNET.pdb
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\Utilities\bin\Debug\BitlyDotNET.xml
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\Utilities\bin\Debug\Entity.pdb
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\Utilities\bin\Debug\Interop.AccessibilityCplAdminLib.dll
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\Utilities\obj\Debug\Utilities.csprojResolveAssemblyReference.cache
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\Utilities\obj\Debug\Interop.AccessibilityCplAdminLib.dll
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\Utilities\obj\Debug\Utilities.csproj.ResolveComReference.cache
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\Utilities\obj\Debug\Utilities.dll
+C:\PROMOSCRAPERS-GITHUB-LATEST\PROMOSCRAPERS\Utilities\obj\Debug\Utilities.pdb
