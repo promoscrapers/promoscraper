@@ -10,6 +10,9 @@ using System.Xml.Serialization;
 using System.IO;
 using System.Xml;
 using System.Xml.Linq;
+using MarketplaceWebServiceSellers.Model;
+using MarketplaceWebServiceSellers;
+using System.Data;
 
 namespace BusinessLogic
 {
@@ -44,7 +47,123 @@ namespace BusinessLogic
 
         //}
 
+        public List<KotletaProduct> getProductListfromDB()
+        {
+            List<KotletaProduct> lst = new List<KotletaProduct>();
 
+            
+            DataSet ds = EntityDAL.ProductPageList(1);
+            DataTable dt = new DataTable();
+            dt = ds.Tables[0];
+
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                KotletaProduct SD = new KotletaProduct();
+                SD.AmazonASIN = dt.Rows[i]["AmazonASIN"].ToString();
+                SD.Name = dt.Rows[i]["Name"].ToString();
+                SD.Price = Convert.ToDecimal(dt.Rows[i]["OriginalPrice"]);
+                SD.ImageURL = dt.Rows[i]["ImageURL"].ToString();
+                lst.Add(SD);
+            }
+            return lst;
+        }
+
+        public void Callforsellers()
+        {
+            // TODO: Set the below configuration variables before attempting to run
+
+            // Developer AWS access key
+            string accessKey = "AKIAIQ3SPJWPOUYVECYQ";
+
+            string secretKey = "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";
+
+            string appName = "Promo Scrapers";
+
+            string appVersion = "amzn1.devportal.apprelease.ae28aae240434fd7b86e94269c44a4c5";
+
+            string serviceURL = "https://mws.amazonservices.com";
+
+            // Create a configuration object
+            MarketplaceWebServiceSellersConfig config = new MarketplaceWebServiceSellersConfig();
+            config.ServiceURL = serviceURL;
+            // Set other client connection configurations here if needed
+            // Create the client itself
+            MarketplaceWebServiceSellers.MarketplaceWebServiceSellers client = new MarketplaceWebServiceSellersClient(accessKey, secretKey, appName, appVersion, config);
+
+            //MarketplaceWebServiceSellersSample sample = new MarketplaceWebServiceSellersSample(client);
+
+            // Uncomment the operation you'd like to test here
+            // TODO: Modify the request created in the Invoke method to be valid
+
+            try
+            {
+                MarketplaceWebServiceSellers.Model.IMWSResponse response = null;
+                //response = InvokeGetServiceStatus(client);
+                response = InvokeListMarketplaceParticipations(client);
+                //response = InvokeListMarketplaceParticipationsByNextToken(client);
+                Console.WriteLine("Response:");
+                MarketplaceWebServiceSellers.Model.ResponseHeaderMetadata rhmd = response.ResponseHeaderMetadata;
+                // We recommend logging the request id and timestamp of every call.
+                Console.WriteLine("RequestId: " + rhmd.RequestId);
+                Console.WriteLine("Timestamp: " + rhmd.Timestamp);
+                string responseXml = response.ToXML();
+                Console.WriteLine(responseXml);
+            }
+            catch (MarketplaceWebServiceSellersException ex)
+            {
+                // Exception properties are important for diagnostics.
+                MarketplaceWebServiceSellers.Model.ResponseHeaderMetadata rhmd = ex.ResponseHeaderMetadata;
+                Console.WriteLine("Service Exception:");
+                if (rhmd != null)
+                {
+                    Console.WriteLine("RequestId: " + rhmd.RequestId);
+                    Console.WriteLine("Timestamp: " + rhmd.Timestamp);
+                }
+                Console.WriteLine("Message: " + ex.Message);
+                Console.WriteLine("StatusCode: " + ex.StatusCode);
+                Console.WriteLine("ErrorCode: " + ex.ErrorCode);
+                Console.WriteLine("ErrorType: " + ex.ErrorType);
+                throw ex;
+            }
+        }
+
+        public MarketplaceWebServiceSellers.Model.GetServiceStatusResponse InvokeGetServiceStatus(MarketplaceWebServiceSellers.MarketplaceWebServiceSellers client)
+        {
+
+            
+            // Create a request.
+            MarketplaceWebServiceSellers.Model.GetServiceStatusRequest request = new MarketplaceWebServiceSellers.Model.GetServiceStatusRequest();
+            string sellerId = "A3H9ZT52H99B8J";
+            request.SellerId = sellerId;
+            string mwsAuthToken = "amzn.mws.06af8380-c09c-5d3b-8943-994cf89b99b5";
+            request.MWSAuthToken = mwsAuthToken;
+            return client.GetServiceStatus(request);
+        }
+
+        public ListMarketplaceParticipationsResponse InvokeListMarketplaceParticipations(MarketplaceWebServiceSellers.MarketplaceWebServiceSellers client)
+        {
+            // Create a request.
+            ListMarketplaceParticipationsRequest request = new ListMarketplaceParticipationsRequest();
+
+            string sellerId = "A3H9ZT52H99B8J";
+            request.SellerId = sellerId;
+            string mwsAuthToken = "amzn.mws.06af8380-c09c-5d3b-8943-994cf89b99b5";
+            request.MWSAuthToken = mwsAuthToken;
+            return client.ListMarketplaceParticipations(request);
+        }
+
+        public ListMarketplaceParticipationsByNextTokenResponse InvokeListMarketplaceParticipationsByNextToken(MarketplaceWebServiceSellers.MarketplaceWebServiceSellers client)
+        {
+            // Create a request.
+            ListMarketplaceParticipationsByNextTokenRequest request = new ListMarketplaceParticipationsByNextTokenRequest();
+            string sellerId = "A3H9ZT52H99B8J";
+            request.SellerId = sellerId;
+            string mwsAuthToken = "amzn.mws.06af8380-c09c-5d3b-8943-994cf89b99b5";
+            request.MWSAuthToken = mwsAuthToken;
+            string nextToken = null;
+            request.NextToken = nextToken;
+            return client.ListMarketplaceParticipationsByNextToken(request);
+        }
 
         public void CallToAmazon(string calltype)
         {
@@ -64,7 +183,7 @@ namespace BusinessLogic
 
             try
             {
-                IMWSResponse response = null;
+                MarketplaceWebServiceProducts.Model.IMWSResponse response = null;
                 if(calltype =="GetProducts")
                 { 
                 response = InvokeListMatchingProducts(client);
@@ -93,7 +212,7 @@ namespace BusinessLogic
             }
             catch (MarketplaceWebServiceProductsException ex)
             {
-                ResponseHeaderMetadata rhmd = ex.ResponseHeaderMetadata;
+                MarketplaceWebServiceProducts.Model.ResponseHeaderMetadata rhmd = ex.ResponseHeaderMetadata;
                 throw ex;
             }
         }
@@ -273,6 +392,9 @@ namespace BusinessLogic
             }
 
         }
+
+       
+
 
     }
     public class Product

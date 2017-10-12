@@ -63,6 +63,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Developement\Amazon\dist\MWSProducts_2011-10-01_v2017-03-22.dll</HintPath>
     </Reference>
+    <Reference Include="MWSSellers_2011-07-01_v2015-06-18">
+      <HintPath>..\..\..\Developement\Amazon\Seller\dist\MWSSellers_2011-07-01_v2015-06-18.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
