@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Text;
 using Entity;
 using Utilities.Data;
+using System.Data;
 
 namespace DataAccess
 {
@@ -161,6 +162,42 @@ namespace DataAccess
             }
 
         }
+
+        public static DataSet ProductPageList(int pageIndex)
+        {
+          
+
+            List<SqlParameter> list = new List<SqlParameter>();
+            SqlParameter parm = null;
+
+            parm = new SqlParameter("PageIndex", System.Data.SqlDbType.Int);
+            parm.Value = pageIndex;
+            list.Add(parm);
+
+            parm = new SqlParameter("PageSize", System.Data.SqlDbType.Int);
+            parm.Value = 10;
+            list.Add(parm);
+
+
+
+            SqlParameter parm_ReturnMessage = new SqlParameter("PageCount", System.Data.SqlDbType.Int, 50);
+            parm_ReturnMessage.Direction = System.Data.ParameterDirection.Output;
+            list.Add(parm_ReturnMessage);
+
+            DataSet ds=  SqlHelper.ExecuteDataset(DbConnection.GetConnectionString(), System.Data.CommandType.StoredProcedure, "[GetProductsPageWise]", list.ToArray());
+          
+
+            DataTable dt = new DataTable("PageCount");
+            dt.Columns.Add("PageCount");
+            dt.Rows.Add();
+            dt.Rows[0][0] = parm_ReturnMessage.Value.ToString();
+            ds.Tables.Add(dt);
+
+            return ds;
+            
+        }
+
+      
 
         public static bool InsertProductCategories(string CategoryId,string CategoryName,string ParentId)
         {

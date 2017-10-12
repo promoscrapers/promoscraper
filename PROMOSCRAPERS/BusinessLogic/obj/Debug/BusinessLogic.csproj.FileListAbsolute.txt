@@ -120,3 +120,4 @@ D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\bin\Debug\BitlyDotNET.xml
 D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
 D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\obj\Debug\BusinessLogic.dll
 D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\obj\Debug\BusinessLogic.pdb
+D:\Georgi Workspace\PROMOSCRAPERS\BusinessLogic\bin\Debug\MWSSellers_2011-07-01_v2015-06-18.dll

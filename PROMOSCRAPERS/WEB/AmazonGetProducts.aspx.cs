@@ -28,6 +28,7 @@ public partial class AmazonGetProducts : System.Web.UI.Page
     protected  void btngetCategories_Click(object sender, EventArgs e)
     {
         UserBLL dd = new UserBLL();
-        dd.CallToAmazon("GetCategories");
+        //dd.CallToAmazon("GetCategories");
+        dd.Callforsellers();
     }
 }

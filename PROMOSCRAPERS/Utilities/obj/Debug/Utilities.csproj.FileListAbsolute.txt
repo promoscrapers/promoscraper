@@ -114,3 +114,6 @@ D:\Georgi Workspace\PROMOSCRAPERS\Utilities\obj\Debug\Interop.AccessibilityCplAd
 D:\Georgi Workspace\PROMOSCRAPERS\Utilities\obj\Debug\Utilities.csproj.ResolveComReference.cache
 D:\Georgi Workspace\PROMOSCRAPERS\Utilities\obj\Debug\Utilities.dll
 D:\Georgi Workspace\PROMOSCRAPERS\Utilities\obj\Debug\Utilities.pdb
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\bin\Debug\AWSSDK.Core.dll
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\bin\Debug\AWSSDK.Core.pdb
+D:\Georgi Workspace\PROMOSCRAPERS\Utilities\bin\Debug\AWSSDK.Core.xml
