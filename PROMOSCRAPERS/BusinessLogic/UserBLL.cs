@@ -73,14 +73,12 @@ namespace BusinessLogic
             // TODO: Set the below configuration variables before attempting to run
 
             // Developer AWS access key
-            string accessKey = "AKIAIQ3SPJWPOUYVECYQ";
+            string accessKey = null;
 
-            string secretKey = "bdMj+B+enP/8xLoinC8S8e5UwCdxg3w8/STDkoCh";
+            string secretKey = null;
+            string appName = null;
 
-            string appName = "Promo Scrapers";
-
-            string appVersion = "amzn1.devportal.apprelease.ae28aae240434fd7b86e94269c44a4c5";
-
+            string appVersion = null;
             string serviceURL = "https://mws.amazonservices.com";
 
             // Create a configuration object
@@ -133,9 +131,9 @@ namespace BusinessLogic
             
             // Create a request.
             MarketplaceWebServiceSellers.Model.GetServiceStatusRequest request = new MarketplaceWebServiceSellers.Model.GetServiceStatusRequest();
-            string sellerId = "A3H9ZT52H99B8J";
+            string sellerId = null;
             request.SellerId = sellerId;
-            string mwsAuthToken = "amzn.mws.06af8380-c09c-5d3b-8943-994cf89b99b5";
+            string mwsAuthToken = null;
             request.MWSAuthToken = mwsAuthToken;
             return client.GetServiceStatus(request);
         }
@@ -145,9 +143,9 @@ namespace BusinessLogic
             // Create a request.
             ListMarketplaceParticipationsRequest request = new ListMarketplaceParticipationsRequest();
 
-            string sellerId = "A3H9ZT52H99B8J";
+            string sellerId = null;
             request.SellerId = sellerId;
-            string mwsAuthToken = "amzn.mws.06af8380-c09c-5d3b-8943-994cf89b99b5";
+            string mwsAuthToken = null;
             request.MWSAuthToken = mwsAuthToken;
             return client.ListMarketplaceParticipations(request);
         }
@@ -156,9 +154,9 @@ namespace BusinessLogic
         {
             // Create a request.
             ListMarketplaceParticipationsByNextTokenRequest request = new ListMarketplaceParticipationsByNextTokenRequest();
-            string sellerId = "A3H9ZT52H99B8J";
+            string sellerId = null;
             request.SellerId = sellerId;
-            string mwsAuthToken = "amzn.mws.06af8380-c09c-5d3b-8943-994cf89b99b5";
+            string mwsAuthToken = null;
             request.MWSAuthToken = mwsAuthToken;
             string nextToken = null;
             request.NextToken = nextToken;
@@ -167,13 +165,14 @@ namespace BusinessLogic
 
         public void CallToAmazon(string calltype)
         {
-            string accessKey = "AKIAIQ3SPJWPOUYVECYQ";
+            string accessKey = null;
 
-            string secretKey = "bdMj+B+enP/8xLoinC8S8e5UwCdxg3w8/STDkoCh";
+            string secretKey = null;
+
+            string appName = null;
             
-            string appName = "Promo Scrapers";
-            
-            string appVersion = "amzn1.devportal.apprelease.ae28aae240434fd7b86e94269c44a4c5";
+            string appVersion = null;
+
             string serviceURL = "https://mws.amazonservices.com";
 
             MarketplaceWebServiceProductsConfig config = new MarketplaceWebServiceProductsConfig();
@@ -221,11 +220,11 @@ namespace BusinessLogic
         {
             // Create a request.
             ListMatchingProductsRequest request = new ListMatchingProductsRequest();
-            string sellerId = "A3H9ZT52H99B8J";
+            string sellerId = null;
             request.SellerId = sellerId;
-            string mwsAuthToken = "amzn.mws.06af8380-c09c-5d3b-8943-994cf89b99b5";
+            string mwsAuthToken = null;
             request.MWSAuthToken = mwsAuthToken;
-            string marketplaceId = "ATVPDKIKX0DER";
+            string marketplaceId = null;
             request.MarketplaceId = marketplaceId;
             string query = "All";
             request.Query = query;
@@ -237,11 +236,11 @@ namespace BusinessLogic
         public GetProductCategoriesForASINResponse InvokeGetProductCategoriesForASIN(MarketplaceWebServiceProducts.MarketplaceWebServiceProducts client,string ASIN)
         {
             GetProductCategoriesForASINRequest request = new GetProductCategoriesForASINRequest();
-            string sellerId = "A3H9ZT52H99B8J";
+            string sellerId = null;
             request.SellerId = sellerId;
-            string mwsAuthToken = "amzn.mws.06af8380-c09c-5d3b-8943-994cf89b99b5";
+            string mwsAuthToken = null;
             request.MWSAuthToken = mwsAuthToken;
-            string marketplaceId = "ATVPDKIKX0DER";
+            string marketplaceId = null;
             request.MarketplaceId = marketplaceId;
             string asin = ASIN;
             request.ASIN = asin;
